@@ -17,10 +17,132 @@ everything in this section helps make a box and a dropdown box inside
     </form>
   </body>
 
-  useful website for checking if something works/how it looks without opening the actual page
+//useful website for checking if something works/how it looks without opening the actual page
   https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default
 
   foundation template/useful snippets that can be gotten from said templates
   https://get.foundation/templates.html
 
-  
+// make a mega-menu dropdown in foundation
+  link: https://get.foundation/building-blocks/blocks/topbar-mega-menu-dropdown.html
+  <div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Site Title</li>
+      <li class="mega-menu">
+        <a data-toggle="mega-menu" href="#">One</a>
+
+        <div class="dropdown-pane bottom" id="mega-menu" data-dropdown data-options="closeOnClick:true; hover: true; hoverPane: true; vOffset:11">
+
+          <div class="row expanded">
+            <div class="column">
+              <ul class="menu vertical">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul class="menu vertical">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul class="menu vertical">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </li>
+      <li><a href="#">Two</a></li>
+      <li><a href="#">Three</a></li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li><input type="search" placeholder="Search"></li>
+      <li><button type="button" class="button">Search</button></li>
+    </ul>
+  </div>
+  </div>
+
+//card template for a user
+ <div class="card-user-container">
+ <!--card's image-->
+  <div class="card-user-avatar">
+    <img src="https://placehold.it/350x350" alt="" class="user-image">
+  </div>
+<!--card's socail icons-->
+  <div class="card-user-social">
+    <ul class="menu">
+      <li class="fa fa-twitter"></li>
+      <li class="fa fa-dribbble"></li>
+      <li class="fa fa-instagram"></li>
+      <li class="fa fa-github"></li>
+    </ul>
+  </div>
+<!--user info name, bio and location-->
+  <div class="card-user-bio">
+    <h4>User Name</h4>
+    <p>UX/UI ,Front-end developer, Foundation interested. </p>
+    <span class="location"><span class="location-icon fa fa-map-marker"></span><span class="location-text">Makkah Al-Mukaramah</span></span>
+  </div>
+<!--card's follow button-->
+  <div class="card-user-button">
+    <a href="#" class="button">FOLLOW</a>
+  </div>
+ </div>
+
+//foundation form that can be used for input
+ <div class="translucent-form-overlay">
+  <form>
+    <h3>Search for Properties</h3>
+    <div class="row columns">
+      <label>Keyword
+        <input type="text" name="keyword" placeholder="Any">
+      </label>
+    </div>
+    <div class="row columns">
+      <label>Property Status
+        <select name="status" type="text">
+          <option>Any</option>
+          <option value="rent">Rent</option>
+          <option value="buy">Buy</option>
+        </select>
+      </label>
+    </div>
+    <div class="row columns">
+      <label>Property Type
+        <select name="status" type="text">
+          <option>Any</option>
+          <option value="office">Office</option>
+          <option value="building">Building</option>
+        </select>
+      </label>
+    </div>
+    <div class="row columns">
+      <label>Location
+        <input type="text" name="location" placeholder="Any">
+      </label>
+    </div>
+    <div class="row">
+      <label class="columns small-12">Price</label>
+      <div class="columns small-6">
+        <input type="number" min="0" name="min" placeholder="Min">
+      </div>
+      <div class="columns small-6">
+        <input type="number" min="0" name="max" placeholder="Max">
+      </div>
+    </div>
+    <button type="button" class="primary button expanded search-button">
+      Search
+    </button>
+ </form>
+ </div>
+
